@@ -93,7 +93,8 @@ function zborder_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'zborder_excerpt_length' );
 //Returns a "Read more &raquo;" link for excerpts
 function zborder_continue_reading_link() {
-	return '<p class="read-more"><a href="'. esc_url(get_permalink()) . '">read more</a></p>';
+	#return '<p class="read-more"><a href="'. esc_url(get_permalink()) . '">read more</a></p>';
+	return '';
 }
 //Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and zborder_continue_reading_link().
 function zborder_auto_excerpt_more( $more ) {

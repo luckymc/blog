@@ -29,9 +29,10 @@
 		} elseif(is_year()) {
 			$post_path = get_the_date( _x( 'Y', 'yearly archives date format', 'zborder' ) );
 		} else {
-			$post_path = get_the_date( _x( 'F Y', 'monthly archives date format', 'zborder' ) );
+			$post_path = get_the_date( _x( 'Y.m', 'monthly archives date format', 'zborder' ) );
 		}
-		$archive_title = __('Date Archives:', 'zborder') . ' <span>'. $post_path . '</span>';
+		#$archive_title = __('Date Archives:', 'zborder') . ' <span>'. $post_path . '</span>';
+		$archive_title = '<span>'. $post_path . '</span>';
 	} elseif ( is_author() ) {
 		$curauth = get_userdata_in_author_archive();
 		$post_path=$curauth->display_name;
