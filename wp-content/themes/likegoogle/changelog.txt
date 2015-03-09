@@ -1,0 +1,4 @@
+*** LikeGoogle Changelog ***
+
+Version 1.0.0 - 23/07/2014
+* First release!

@@ -1,0 +1,68 @@
+﻿body {overflow:scroll}
+ img {
+   width:auto !important;
+   max-width:inherit !important
+
+ }
+  [optional parent-element-selector] a {
+    -ms-filter: ""; /* Reset the filter property */
+    display: inline-block; /* Enable hasLayout */
+
+    /*
+     * Recommended properties for hasLayout:
+     *
+     * display: inline-block;
+     * display: block;
+     * float:left;
+     *
+     */
+  }
+
+.top-navigation, header#header-layout, .footer-layout, .footer-nav, footer#theme-footer{
+	min-width:726px;
+}
+
+
+.top-navigation ul ul { border:1px solid #ddd; border-top:none}
+ 
+.search-top input.search-field { padding-left:10px !important; width:650px;}
+
+.post-thumbnail a, .post-thumbnail {
+	padding:0px !important
+}
+
+
+.post-thumbnail a, .post-thumbnail a:hover { border:none; padding:0px}
+
+
+/* Post Thumbnail */
+.post-thumbnail {
+	margin: 0 15px 10px 2px;
+	position: relative;
+	background:#FFF;
+	line-height: 0;
+}
+	.post-thumbnail a {display:block; background:#000; }
+
+	.post-thumbnail img {
+		-webkit-transition: all .40s;
+		-moz-transition: all .40s;
+		-o-transition: all .40s;
+		transition: all .40s;
+		height: auto;
+		max-width: 100%;
+		width: 100%;
+		border: 1px solid #eee; padding:4px;
+	}
+.post-thumbnail img:hover { border:1px solid #ccc}
+
+.post-thumbnail img.attachment-thumbnail-55x55, .post-thumbnail img.avatar-50 {
+	width: 55px !important;
+}
+.widget .post-thumbnail {}
+.widget .post-thumbnail img { width: inherit !important;}
+
+.footer-layout { padding:5px;}
+
+#select-nav { margin-right:5px;}
+.search-menu {}

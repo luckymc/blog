@@ -1,0 +1,7 @@
+﻿body {overflow:scroll}
+ img {
+   width:auto !important;
+   max-width:inherit !important
+
+ }
+.footer-widget, .widget { border:1px solid #cacaca}
